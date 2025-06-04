@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environs - Pollution Control</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background-image: url('photo_one.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            z-index: 0;
+            /* Add this line to blur the background */
+            backdrop-filter: blur(5px); /* Adjust the pixel value for more or less blur */
+            -webkit-backdrop-filter: blur(5px); /* For Safari support */
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+        }
+
+        /* Custom style to increase header (navbar) size */
+        .navbar {
+            padding-top: 15px; /* Increase top padding */
+            padding-bottom: 15px; /* Increase bottom padding */
+        }
+
+        /* Custom style to increase the size of "Environs Wholly" text */
+        .navbar-brand {
+            font-size: 1.8rem; /* Adjust this value to make the text larger */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="photo_three.png" alt="Environs Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                Environs Wholly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certify.html">Certification</a></li>
+                    <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-white text-center">
+            <h1 class="display-4">Protecting Our Planet, Together</h1>
+            <p class="lead">Dedicated to combating pollution and fostering a sustainable future.</p>
+            <a href="about.html" class="btn btn-outline-light btn-lg mt-3">Learn More</a>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Understanding Pollution</h2>
+        <p class="text-center lead mb-5">Pollution, in its various forms, poses a severe threat to our environment and health. Understanding its types is the first step towards mitigation.</p>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>Air Pollution</h3>
+                <p>Harmful gases and particulate matter from industrial emissions and vehicles lead to respiratory issues and climate change.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Water Pollution</h3>
+                <p>Waste dumping, oil spills, and chemicals contaminate our water sources, endangering marine life and human health.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Land Pollution</h3>
+                <p>Excessive waste, deforestation, and industrial activities degrade land quality, harming ecosystems and food production.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light p-5">
+        <h2 class="text-center">How You Can Help</h2>
+        <ul class="list-unstyled text-center">
+            <li>♻️ Reduce, reuse, and recycle waste.</li>
+            <li>🌱 Support sustainable and eco-friendly initiatives.</li>
+            <li>🚲 Opt for public transport or cycling to reduce emissions.</li>
+            <li>💡 Conserve energy by using efficient appliances and renewable sources.</li>
+            <li>📢 Spread awareness and encourage action in your community.</li>
+        </ul>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2025 Environs | Pollution Control Initiative</p>
+        <p>📍 123 Eco Street, Green City, GA 30301, USA</p>
+        <p>📞 +1 (800) 555-ENV1 | 📧 contact@environs.org</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>     

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environs - About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background-image: url('photo_one.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            z-index: 0;
+            /* Add these lines to blur the background */
+            backdrop-filter: blur(5px); /* Adjust the pixel value for more or less blur */
+            -webkit-backdrop-filter: blur(5px); /* For Safari support */
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+        }
+        /* Custom style to increase the size of "Environs Wholly" text */
+        .navbar-brand {
+            font-size: 1.8rem; /* Adjust this value to make the text larger */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="photo_three.png" alt="Environs Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                Environs Wholly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certify.html">Certification</a></li>
+                    <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-white text-center">
+            <h1 class="display-4">About Environs Wholly</h1>
+            <p class="lead">Our mission to combat pollution and promote sustainability.</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Story and Vision</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <p>Environs Wholly is a dedicated initiative focused on combating pollution and promoting environmental sustainability. Our mission is to raise awareness, implement actionable solutions, and foster a global community committed to protecting our planet for future generations.</p>
+                <p>Founded in [Year, e.g., 2010], we started with a small group of passionate individuals and have grown into a worldwide network of volunteers, experts, and partners. We believe that through collective effort and informed action, we can significantly reduce the impact of pollution on our air, water, and land.</p>
+                <h3>Our Vision</h3>
+                <p>To create a world where environmental health is prioritized, and sustainable practices are integrated into every aspect of life, ensuring a thriving planet for all.</p>
+                <h3>Our Core Values</h3>
+                <ul>
+                    <li><strong>Sustainability:</strong> Advocating for practices that meet the needs of the present without compromising the ability of future generations to meet their own needs.</li>
+                    <li><strong>Collaboration:</strong> Working with communities, organizations, and governments to achieve shared environmental goals.</li>
+                    <li><strong>Education:</strong> Empowering individuals with knowledge and tools to make environmentally responsible choices.</li>
+                    <li><strong>Innovation:</strong> Seeking and promoting new technologies and approaches to tackle environmental challenges effectively.</li>
+                    <li><strong>Accountability:</strong> Holding ourselves and others responsible for environmental stewardship.</li>
+                </ul>
+                <p>Join us in our journey to make a lasting positive impact on the environment. Together, we can make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2025 Environs | Pollution Control Initiative</p>
+        <p>📍 123 Eco Street, Green City, GA 30301, USA</p>
+        <p>📞 +1 (800) 555-ENV1 | 📧 contact@environs.org</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

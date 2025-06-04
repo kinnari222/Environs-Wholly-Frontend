@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environs - Downloads</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background-image: url('photo_one.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            z-index: 0;
+            /* Add these lines to blur the background */
+            backdrop-filter: blur(5px); /* Adjust the pixel value for more or less blur */
+            -webkit-backdrop-filter: blur(5px); /* For Safari support */
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+        }
+        /* Custom style to increase the size of "Environs Wholly" text */
+        .navbar-brand {
+            font-size: 1.8rem; /* Adjust this value to make the text larger */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="photo_three.png" alt="Environs Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                Environs Wholly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certify.html">Certification</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-white text-center">
+            <h1 class="display-4">Download Resources</h1>
+            <p class="lead">Access reports, guides, and forms to support environmental efforts.</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-5">Download Our Resources</h2>
+        <p class="lead text-center mb-5">Access a variety of documents, reports, and guidelines related to pollution control and environmental sustainability.</p>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5>Annual Environmental Impact Report 2024</h5>
+                            <p class="mb-0 text-muted">A comprehensive overview of global environmental trends and our contributions.</p>
+                        </div>
+                        <a href="downloads/Environs_Annual_Report_2024.pdf" class="btn btn-success" download>Download PDF</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5>Guide to Reducing Plastic Waste at Home</h5>
+                            <p class="mb-0 text-muted">Practical tips and strategies for minimizing plastic consumption in daily life.</p>
+                        </div>
+                        <a href="downloads/Plastic_Waste_Reduction_Guide.pdf" class="btn btn-success" download>Download PDF</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5>Water Conservation Handbook for Communities</h5>
+                            <p class="mb-0 text-muted">A detailed guide for communities on implementing effective water conservation measures.</p>
+                        </div>
+                        <a href="downloads/Water_Conservation_Handbook.pdf" class="btn btn-success" download>Download PDF</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5>Environs Wholly Brochure</h5>
+                            <p class="mb-0 text-muted">Learn more about our mission, services, and how you can get involved.</p>
+                        </div>
+                        <a href="downloads/Environs_Brochure.pdf" class="btn btn-success" download>Download PDF</a>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>
+                            <h5>Volunteer Application Form</h5>
+                            <p class="mb-0 text-muted">Interested in volunteering? Fill out and submit this form.</p>
+                        </div>
+                        <a href="downloads/Volunteer_Application_Form.docx" class="btn btn-success" download>Download DOCX</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p>If you require a document not listed here, please feel free to <a href="contact.html">contact us</a>.</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2025 Environs | Pollution Control Initiative</p>
+        <p>📍 123 Eco Street, Green City, GA 30301, USA</p>
+        <p>📞 +1 (800) 555-ENV1 | 📧 contact@environs.org</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

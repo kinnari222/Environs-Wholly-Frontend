@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environs - Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background-image: url('photo_one.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+            z-index: 0;
+            /* Add these lines to blur the background */
+            backdrop-filter: blur(5px); /* Adjust the pixel value for more or less blur */
+            -webkit-backdrop-filter: blur(5px); /* For Safari support */
+        }
+        .hero-section .container {
+            position: relative;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+        }
+        /* Custom style to increase the size of "Environs Wholly" text */
+        .navbar-brand {
+            font-size: 1.8rem; /* Adjust this value to make the text larger */
+        }
+        /* Optional: Add some styling for gallery images */
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="photo_three.png" alt="Environs Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
+                Environs Wholly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Our services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="certify.html">Certification</a></li>
+                    <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-white text-center">
+            <h1 class="display-4">Our Photo Gallery</h1>
+            <p class="lead">Capturing our efforts for a cleaner environment.</p>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-5">Our Impact in Action: Photo Gallery</h2>
+        <p class="lead text-center mb-5">Browse through images showcasing our community projects, cleanup drives, awareness campaigns, and the beautiful environments we strive to protect.</p>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <img src="gallery_images/cleanup_drive_1.jpg" class="img-fluid" alt="Community Cleanup Drive">
+                    <div class="p-3 text-center">
+                        <p class="mb-0">Volunteers during a river cleanup drive.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <img src="gallery_images/tree_planting_2.jpg" class="img-fluid" alt="Tree Planting Initiative">
+                    <div class="p-3 text-center">
+                        <p class="mb-0">Reforestation efforts in a local park.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <img src="gallery_images/education_workshop_3.jpg" class="img-fluid" alt="Environmental Education Workshop">
+                    <div class="p-3 text-center">
+                        <p class="mb-0">Educating students on waste segregation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <img src="gallery_images/community_event_4.jpg" class="img-fluid" alt="Community Awareness Event">
+                    <div class="p-3 text-center">
+                        <p class="mb-0">Engaging with the community at an eco-fair.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <img src="gallery_images/water_testing_5.jpg" class="img-fluid" alt="Water Quality Testing">
+                    <div class="p-3 text-center">
+                        <p class="mb-0">Monitoring water quality in a local lake.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="gallery-item">
+                    <img src="gallery_images/recycling_program_6.jpg" class="img-fluid" alt="Recycling Program">
+                    <div class="p-3 text-center">
+                        <p class="mb-0">Our team managing a community recycling point.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <p>More inspiring images and videos coming soon!</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; 2025 Environs | Pollution Control Initiative</p>
+        <p>📍 123 Eco Street, Green City, GA 30301, USA</p>
+        <p>📞 +1 (800) 555-ENV1 | 📧 contact@environs.org</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
