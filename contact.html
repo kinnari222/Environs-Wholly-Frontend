@@ -1,140 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Environs - Contact Us</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        .hero-section {
-            background-image: url('photo_one.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 400px; /* Adjust height as needed */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
-            z-index: 0;
-            /* Add these lines to blur the background */
-            backdrop-filter: blur(5px); /* Adjust the pixel value for more or less blur */
-            -webkit-backdrop-filter: blur(5px); /* For Safari support */
-        }
-        .hero-section .container {
-            position: relative;
-            z-index: 1;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
-        }
-        /* Custom style to increase the size of "Environs Wholly" text */
-        .navbar-brand {
-            font-size: 1.8rem; /* Adjust this value to make the text larger */
-        }
+      html {
+        scroll-behavior: smooth;
+      }
+      .hero-section {
+        background-image: url("photo_one.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Dark overlay for text readability */
+        z-index: 0;
+        /* Add these lines to blur the background */
+        backdrop-filter: blur(
+          5px
+        ); /* Adjust the pixel value for more or less blur */
+        -webkit-backdrop-filter: blur(5px); /* For Safari support */
+      }
+      .hero-section .container {
+        position: relative;
+        z-index: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+      }
+      /* Custom style to increase the size of "Environs Wholly" text */
+      .navbar-brand {
+        font-size: 1.8rem; /* Adjust this value to make the text larger */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="photo_three.png" alt="Environs Logo" style="height: 50px; vertical-align: middle; margin-right: 10px;">
-                Environs Wholly
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Our services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="certify.html">Certification</a></li>
-                    <li class="nav-item"><a class="nav-link" href="downloads.html">Downloads</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact us</a></li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="photo_three.png"
+            alt="Environs Logo"
+            style="height: 50px; vertical-align: middle; margin-right: 10px"
+          />
+          Environs Wholly
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Our services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="certify.html">Certification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="downloads.html">Downloads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact us</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <section class="hero-section">
-        <div class="container text-white text-center">
-            <h1 class="display-4">Get in Touch</h1>
-            <p class="lead">We're here to answer your questions and collaborate.</p>
-        </div>
+      <div class="container text-white text-center">
+        <h1 class="display-4">Get in Touch</h1>
+        <p class="lead">We're here to answer your questions and collaborate.</p>
+      </div>
     </section>
 
     <section class="container my-5">
-        <h2 class="text-center mb-5">Get in Touch with Environs Wholly</h2>
-        <p class="lead text-center mb-5">We'd love to hear from you! Whether you have a question, want to volunteer, or discuss a partnership, please reach out.</p>
+      <h2 class="text-center mb-5">Get in Touch with Environs Wholly</h2>
+      <p class="lead text-center mb-5">
+        We'd love to hear from you! Whether you have a question, want to
+        volunteer, or discuss a partnership, please reach out.
+      </p>
 
-        <div class="row">
-            <div class="col-lg-6 mb-4">
-                <h3>Send Us a Message</h3>
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit Message</button>
-                </form>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required />
             </div>
-            <div class="col-lg-6 mb-4">
-                <h3>Contact Information</h3>
-                <p><i class="bi bi-geo-alt-fill"></i> <strong>Address:</strong> Plot No 124, Rafadeshwar GIDC Rd, Rafaleshwar, Morbi, Jambudiya, Gujarat 363642</p>
-                <p><i class="bi bi-phone-fill"></i> <strong>Phone:</strong> +91 9662833941</p>
-                <p><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> environs.wholly@gmail.com</p>
-                <p><i class="bi bi-clock-fill"></i> <strong>Business Hours:</strong> Mon - Fri: 9:00 AM - 5:00 PM (EST)</p>
-
-                <h3 class="mt-4">Find Us on the Map</h3>
-                <div class="map-container" style="height: 300px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center; color: #6c757d;">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.1002119570635!2d70.9073677!3d22.767271700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395991921be2d05f%3A0x659fe731884374e5!2sENVIRONS%20WHOLLY!5e1!3m2!1sen!2sin!4v1749030764256!5m2!1sen!2sin" 
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-</div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" required />
             </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Your Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                placeholder="+91 XXXXX XXXXX"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Submit Message
+            </button>
+          </form>
         </div>
+        <div class="col-lg-6 mb-4">
+          <h3>Contact Information</h3>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i> <strong>Address:</strong> Plot No
+            124, Rafadeshwar GIDC Rd, Rafaleshwar, Morbi, Jambudiya, Gujarat
+            363642
+          </p>
+          <p>
+            <i class="bi bi-phone-fill"></i> <strong>Phone:</strong> +91
+            9662833941
+          </p>
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <strong>Email:</strong> environs.wholly@gmail.com
+          </p>
+          <p>
+            <i class="bi bi-clock-fill"></i>
+            <strong>Business Hours:</strong> Mon - Fri: 9:00 AM - 5:00 PM (EST)
+          </p>
+
+          <h3 class="mt-4">Find Us on the Map</h3>
+          <div
+            class="map-container"
+            style="
+              height: 300px;
+              background-color: #e9ecef;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #6c757d;
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.1002119570635!2d70.9073677!3d22.767271700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395991921be2d05f%3A0x659fe731884374e5!2sENVIRONS%20WHOLLY!5e1!3m2!1sen!2sin!4v1749030764256!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer class="bg-dark text-white text-center p-4">
-        <p>&copy; 2025 Environs | Pollution Control Initiative</p>
-        <p>📍 Plot No 124, Rafadeshwar GIDC Rd, Rafaleshwar, Morbi, Jambudiya, Gujarat 363642</p>
-        <p>📞 +91 9662833941 | 📧 environs.wholly@gmail.com</p>
+      <p>&copy; 2025 Environs | Pollution Control Initiative</p>
+      <p>
+        📍 Plot No 124, Rafadeshwar GIDC Rd, Rafaleshwar, Morbi, Jambudiya,
+        Gujarat 363642
+      </p>
+      <p>📞 +91 9662833941 | 📧 environs.wholly@gmail.com</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </body>
 </html>
